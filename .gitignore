@@ -1,0 +1,10 @@
+/nbproject/
+/vendor/
+/satis.json
+/web/git add .
+/output/
+
+/composer.phar
+/.phpunit.result.cache
+
+.idea

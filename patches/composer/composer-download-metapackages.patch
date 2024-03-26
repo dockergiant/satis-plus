@@ -1,0 +1,19 @@
+Index: vendor/composer/composer/src/Composer/Downloader/DownloadManager.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vendor/composer/composer/src/Composer/Downloader/DownloadManager.php b/vendor/composer/composer/src/Composer/Downloader/DownloadManager.php
+--- a/vendor/composer/composer/src/Composer/Downloader/DownloadManager.php	
++++ b/vendor/composer/composer/src/Composer/Downloader/DownloadManager.php	(date 1710861199221)
+@@ -136,10 +136,6 @@
+     {
+         $installationSource = $package->getInstallationSource();
+ 
+-        if ('metapackage' === $package->getType()) {
+-            return null;
+-        }
+-
+         if ('dist' === $installationSource) {
+             $downloader = $this->getDownloader($package->getDistType());
+         } elseif ('source' === $installationSource) {

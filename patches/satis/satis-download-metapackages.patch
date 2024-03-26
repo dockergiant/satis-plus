@@ -1,0 +1,18 @@
+Index: vendor/composer/satis/src/Builder/ArchiveBuilderHelper.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vendor/composer/satis/src/Builder/ArchiveBuilderHelper.php b/vendor/composer/satis/src/Builder/ArchiveBuilderHelper.php
+--- a/vendor/composer/satis/src/Builder/ArchiveBuilderHelper.php	
++++ b/vendor/composer/satis/src/Builder/ArchiveBuilderHelper.php	(date 1710861378556)
+@@ -48,9 +48,6 @@
+ 
+     public function isSkippable(PackageInterface $package): bool
+     {
+-        if ('metapackage' === $package->getType()) {
+-            return true;
+-        }
+ 
+         $name = $package->getPrettyString();
+ 

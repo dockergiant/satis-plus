@@ -1,0 +1,44 @@
+{
+    "name": "rbouma/satis-plus",
+    "type": "project",
+    "description": "composer/satis extended with the ability to generate SATIS configuration",
+    "authors": [
+        {
+            "name": "Rick Bouma",
+            "email": "rick@dockergiant.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DockerGiant\\SatisGitlab\\": "src/DockerGiant/SatisGitlab"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DockerGiant\\SatisGitlab\\Tests\\": "tests"
+        }
+    },
+    "bin": [
+        "bin/satis-plus"
+    ],
+    "require": {
+        "mborne/remote-git": "~0.1",
+        "cweagans/composer-patches": "^1.7",
+        "composer/composer": "^2.7",
+        "composer/satis": "dev-main"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "php-coveralls/php-coveralls": "^2.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "composer/satis": true
+        }
+    },
+    "extra": {
+        "patches-file": "patches/composer-patches.json"
+    }
+}

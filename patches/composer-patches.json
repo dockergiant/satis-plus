@@ -1,0 +1,10 @@
+{
+  "patches": {
+    "composer/composer": {
+      "Add and download metapackages as zip instead of skipping": "patches/composer/composer-download-metapackages.patch"
+    },
+    "composer/satis": {
+      "Add and download metapackages as zip instead of skipping": "patches/satis/satis-download-metapackages.patch"
+    }
+  }
+}
