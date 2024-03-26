@@ -21,6 +21,7 @@ bin/satis-plus
 bin/satis-plus gitlab-to-config \
     --homepage https://satis.example.org \
     --output satis.json \
+    --archive \
     https://gitlab.example.org [GitlabToken]
 ```
 
